@@ -25,11 +25,19 @@
   background-color: var(--color-grey-dark-1);
 
   flex: 0 0 18%; // flex: <flex-grow> <flex-shrink> <flex-basis>
+
+  // Push the legal text to the bottom and the nav to the top using flex-direction: column
+  // and justify-content: space-between. This is an easy way to layout a 2-child setup with
+  // each child at the extremity of the container i.e. |x -------------- x|
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
   background-color: orangered;
+  height: 80rem; // testing only
 
   flex: 1; // Grow as much as it can because its sibling flex items have no flex-grow.
 }
