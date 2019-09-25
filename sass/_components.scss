@@ -256,6 +256,12 @@
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.6rem;
+      padding: 1rem 1.5rem;
+      letter-spacing: 0;
+    }
   }
 
   &__stars {
@@ -295,6 +301,11 @@
 
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1rem;
+      margin-left: 1.5rem;
     }
   }
 
@@ -385,6 +396,11 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+  }
+
   &__item {
     // Put two elements side-by-side using 50% flex-basis
     flex: 0 0 50%;
@@ -461,6 +477,10 @@
     margin-bottom: 3rem;
   }
 
+  @media only screen and (max-width: $bp-smallest) {
+    margin-bottom: 2rem;
+  }
+
   &__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -529,6 +549,7 @@
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
+    padding: 0 1rem;
     margin-bottom: 2.5rem;
   }
 }
