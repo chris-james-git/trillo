@@ -223,7 +223,7 @@ body {
       .side-nav__item {
         flex: 1; } }
   .side-nav__item:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -340,7 +340,8 @@ body {
         font-size: 1.8rem; } }
   .overview__rating-count {
     font-size: 0.8rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap; }
     @media only screen and (max-width: 37.5em) {
       .overview__rating-count {
         font-size: 0.5rem; } }
@@ -396,7 +397,7 @@ body {
     flex: 0 0 50%;
     margin-bottom: 0.7rem; }
   .list__item::before {
-    content: '';
+    content: "";
     display: inline-block;
     height: 1rem;
     width: 1rem;
@@ -472,7 +473,7 @@ body {
     font-weight: 300;
     color: var(--color-primary); }
   .review::before {
-    content: '\201C';
+    content: "\201C";
     position: absolute;
     top: -2.75rem;
     left: -1rem;
